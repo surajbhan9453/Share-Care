@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.6)),
+    url(../Images/children-60743_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* border: 2px solid rgb(47, 0, 255); */
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 135px;
+  height: 133px;
+  margin-top: 6px;
+}
+
+.login-signup {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 16px;
+  color: rgb(228, 14, 14);
+  border-radius: 20px;
+  padding: 5px 0;
+  background-color: rgba(255, 55, 0, 0.58);
+}
+
+.login-signup a {
+  color: white;
+  text-decoration: none;
+  margin: 0 32px;
+}
+
+.nav-link {
+  flex: 1;
+  text-align: right;
+
+  margin-top: -2px;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 18px;
+}
+.nav-link ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 8px;
+}
+.nav-link ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 114, 5, 0.917),
+    rgba(255, 252, 252, 0.8),
+    rgba(106, 242, 2, 0.831)
+  );
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+  width: 100%;
+}
+
+/* Button Styling */
+
+input[type="submit"] {
+  width: calc(100% - 12px);
+  margin-bottom: 15px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(14, 14, 14);
+  border: 1px solid rgba(14, 13, 13, 0.595);
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #f1281a;
+  background: #f1281a;
+  color: #f6f5f5;
+  transition: 1s;
+}
+
+/************ Donate Styling *************/
+.form-container {
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  color: #1c1b1b;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.submit-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1281a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #d0170e;
+}
+
+/************ Index Page Styling *************/
+
+.status-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.status-box {
+  width: 560px;
+  height: 130px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.status-box h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.status-box p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for the welcome message */
+.nav-link .welcome-message {
+  color: #ffa22b;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+/********** Donation Records **********/
+.table-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.table-container h2 {
+  color: rgb(238, 80, 36);
+}
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.donation-table th,
+.donation-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.donation-table th {
+  background-color: #232323da;
+  color: white;
+}
+
+.donation-table td {
+  background-color: #fff;
+}
+
+.donation-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/********** Pending Donations **********/
+
+.pending-donations {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #f4ab00cc;
+  margin-bottom: 30px;
+}
+
+.donation-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #ccc;
+}
+
+.donation-details {
+  flex: 1;
+  padding: 10px;
+  margin: 30px 80px;
+}
+
+.donation-details h3 {
+  margin-top: 0;
+  color: #f1281a;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.status p {
+  margin: 0;
+  font-weight: bold;
+  color: #333333d9;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

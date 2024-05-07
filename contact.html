@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share & Care</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce0692ee2e.js" crossorigin="anonymous"></script>
+    
+    <style>
+       
+
+       body {
+            font-family: 'Roboto', sans-serif; /* Changed font family */
+            line-height: 1.6;
+            margin: 10;
+            padding: 0px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-card {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            backdrop-filter: blur(5px); /* Blurring effect */
+            border-radius: 8px;
+        }
+
+
+        .contact-card img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h2 {
+            margin-bottom: 3px; /* Adjusted margin */
+            font-size: 1.2em;
+            font-weight: 700; /* Bold font weight */
+        }
+
+        p {
+            margin-bottom: 1px; /* Adjusted margin */
+            font-weight: 400; /* Normal font weight */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/Share&Carelogo3.png" alt=""></a>
+
+            <!-- Login/Signup button at the top-right corner -->
+            <div class="login-signup">
+                <a href="login.php">Login</a>
+            </div>
+
+
+            <div class="nav-link" id="navLink">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    
+                    <li><a href="topdonors.php">TOP DONORS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="container">
+            <h1 class="contact-header">Contact Us</h1>
+    
+            <div class="contact-card">
+                <img src="images/akshay.jpg" alt="Akshay Thakur">
+                <div>
+                    <h2>Akshay Thakur</h2>
+                    <p>Front-end Developer</p>
+                    <p> akshaythakur@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="contact-card">
+                <img src="images/abhi.jpg" alt="Abhishek">
+                <div>
+                    <h2>Abhishek        </h2>
+                    <p>Front-end Developer</p>
+                    <p> abhishek@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="contact-card">
+                <img src="images/sourabh.jpg" alt="Sourabh Singh">
+                <div>
+                    <h2>Sourabh Singh</h2>
+                    <p>Back-end Developer</p>
+                    <p> sourabh@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="contact-card">
+                <img src="images/suraj.jpeg" alt="Suraj Bhan Kushwaha">
+                <div>
+                    <h2>Suraj Bhan Kushwaha</h2>
+                    <p>Database Administrator (DBA)</p>
+                    <p> surajbhan9453@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

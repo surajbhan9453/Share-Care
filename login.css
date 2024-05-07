@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(Images/bgwall.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+h2 {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    margin-top: 0;
+}
+
+form {
+    max-width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"]{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    border: 1px solid rgba(14, 13, 13, 0.595);
+    padding: 12px 34px;
+    font-size:13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    border: 1px solid #f1281a;
+    background: #f1281a;
+    color: #f6f5f5;
+    transition: 1s;
+}
